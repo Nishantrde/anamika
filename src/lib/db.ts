@@ -15,11 +15,14 @@ if(!cached){
         if(cached.conn){
             return cached.conn
         }
+        if(!cached.promise){
+            cached.promise = mongoose.connect(mongodbUrl).then((conn)=>conn.connection)
+        }
         try{
             const conn = await cached.promise
             return conn
         }catch(error){
-            
+
         }
     }
 
