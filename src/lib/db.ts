@@ -6,6 +6,6 @@ if(!mongodbUrl){
     throw new Error("db error")
 }
 
-// let cache = global.mongoose;
+let cache = global.mongoose;
 
 
