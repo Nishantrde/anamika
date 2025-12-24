@@ -6,9 +6,21 @@ if(!mongodbUrl){
     throw new Error("db error")
 }
 
-let cache = global.mongoose;
-if(!cache){
-    cache = global.mongoose = {conn: null, promise: null
+let cached = global.mongoose;
+if(!cached){
+    cached = global.mongoose = {conn: null, promise: null
+    }
+
+    const connectDB=async()=>{
+        if(cached.conn){
+            return cached.conn
+        }
+        try{
+            const conn = await cached.promise
+            return conn
+        }catch(error){
+            
+        }
     }
 
 }
