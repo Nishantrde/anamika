@@ -7,5 +7,10 @@ if(!mongodbUrl){
 }
 
 let cache = global.mongoose;
+if(!cache){
+    cache = global.mongoose = {conn: null, promise: null
+    }
+
+}
 
 
