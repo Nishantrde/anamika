@@ -37,7 +37,12 @@ export const{handlers, signIn, signOut, auth} = NextAuth({
 
     ],
     callbacks:{
-        
+        //adds user info to session
+        jwt({token, user}){
+            if(user){
+                token.
+            }
+        }
     }
 })
 
