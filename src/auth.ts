@@ -47,8 +47,11 @@ export const{handlers, signIn, signOut, auth} = NextAuth({
             }
             return token
         },
-        session(){
-            
+        session({session, token}){
+            if(session.user){
+                
+            }
+
         }
 
     }
