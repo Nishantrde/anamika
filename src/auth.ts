@@ -40,7 +40,10 @@ export const{handlers, signIn, signOut, auth} = NextAuth({
         //adds user info to session
         jwt({token, user}){
             if(user){
-                token.id = user.id
+                token.id = user.id,
+                token.name = user.name,
+                token.email = user.email,
+                token.role = user.role
             }
         }
     }
