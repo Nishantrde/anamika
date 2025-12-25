@@ -28,13 +28,17 @@ export const{handlers, signIn, signOut, auth} = NextAuth({
                         id:user._id,
                         email: user.email,
                         name: user.name,
-                        
+                        role: user.role
 
                     }
                 
             },
-        })
+        }),
+
     ],
+    callbacks:{
+        
+    }
 })
 
 
