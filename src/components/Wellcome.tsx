@@ -6,10 +6,12 @@ function Wellcome() {
     <div className='flex flex-col items-center justify-center min-h-screen text-center p-6'>
       <motion.div
       initial={{
-        opacity:0
+        opacity:0, 
+        y:-20
       }}
       animate={{
-        opacity:1
+        opacity:1,
+        y:0
       }}
       transition={{
         duration:2
