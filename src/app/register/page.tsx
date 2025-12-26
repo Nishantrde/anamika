@@ -1,4 +1,4 @@
-import Wellcom from '@/components/Wellcome'
+import Wellcome from '@/components/Wellcome'
 import React from 'react'
 
 function Register() {
