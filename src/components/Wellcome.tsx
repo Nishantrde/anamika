@@ -17,7 +17,7 @@ function Wellcome() {
         duration:2
       }}
 
-      >Hell Here</motion.div>
+      ><h1>Anamika</h1></motion.div>
     </div>
   )
 }
