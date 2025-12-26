@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Wellcom() {
+function Wellcome() {
   return (
     <div>
       
@@ -8,4 +8,4 @@ function Wellcom() {
   )
 }
 
-export default Wellcom
+export default Wellcome

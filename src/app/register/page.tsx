@@ -1,10 +1,10 @@
-import Wellcom from '@/components/Wellcom'
+import Wellcom from '@/components/Wellcome'
 import React from 'react'
 
 function Register() {
   return (
     <div>
-      <Wellcom/>
+      <Wellcome/>
     </div>
   )
 }
