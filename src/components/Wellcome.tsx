@@ -17,7 +17,7 @@ function Wellcome() {
         duration:2
       }}
 
-      ><h1>Anamika</h1></motion.div>
+      ><h1 className='test-4xl md:text-5xl font-exterabold text-green-700'>Anamika</h1></motion.div>
     </div>
   )
 }
